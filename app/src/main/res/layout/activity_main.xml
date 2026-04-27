@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+	
+	<TextView
+			android:id="@+id/tvProgress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Productivity: 0/0 Tasks Completed"
+			android:layout_margin="16dp" />
+	
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_below="@id/tvProgress"
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="80dp" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fabAdd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			android:layout_margin="16dp"
+			android:contentDescription="Add Task"
+			app:srcCompat="@drawable/ic_add" />
+</RelativeLayout>
